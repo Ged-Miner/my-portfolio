@@ -1,0 +1,48 @@
+[
+  {
+    "id": "portfolio-website",
+    "title": "Personal Portfolio Website",
+    "description": "A modern, responsive portfolio showcasing web development projects with internationalization support.",
+    "longDescription": "Built with Next.js 16, TypeScript, and Tailwind CSS, this portfolio demonstrates modern web development practices including server-side rendering, responsive design, and multi-language support for English and Japanese audiences.",
+    "category": "Web Development",
+    "tags": ["Next.js", "TypeScript", "Tailwind CSS", "i18n"],
+    "image": "/images/portfolio-thumb.jpg",
+    "images": [
+      "/images/portfolio-1.jpg",
+      "/images/portfolio-2.jpg",
+      "/images/portfolio-3.jpg"
+    ],
+    "date": "2025-11",
+    "github": "https://github.com/yourusername/portfolio"
+  },
+  {
+    "id": "ecommerce-platform",
+    "title": "E-Commerce Platform",
+    "description": "Full-stack e-commerce solution with payment integration and admin dashboard.",
+    "longDescription": "A complete e-commerce platform featuring product management, shopping cart, secure checkout with Stripe integration, and a comprehensive admin dashboard for inventory management.",
+    "category": "Full Stack",
+    "tags": ["React", "Node.js", "PostgreSQL", "Stripe"],
+    "image": "/images/ecommerce-thumb.jpg",
+    "images": [
+      "/images/ecommerce-1.jpg",
+      "/images/ecommerce-2.jpg"
+    ],
+    "date": "2025-09",
+    "link": "https://example-ecommerce.com"
+  },
+  {
+    "id": "task-manager",
+    "title": "Collaborative Task Manager",
+    "description": "Real-time task management app with team collaboration features.",
+    "longDescription": "A productivity tool enabling teams to manage projects, assign tasks, track progress, and collaborate in real-time. Features include drag-and-drop task boards, notifications, and detailed analytics.",
+    "category": "Web App",
+    "tags": ["Next.js", "Firebase", "Material-UI"],
+    "image": "/images/taskmanager-thumb.jpg",
+    "images": [
+      "/images/taskmanager-1.jpg"
+    ],
+    "date": "2025-07",
+    "link": "https://example-tasks.com",
+    "github": "https://github.com/yourusername/task-manager"
+  }
+]
