@@ -3,8 +3,11 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 
 export default function ContactPage() {
+  const t = useTranslations('Contact');
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -40,25 +43,25 @@ export default function ContactPage() {
       <div className="max-w-2xl mx-auto">
         <div className="mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Get In Touch
+            {t('title')}
           </h1>
           <p className="text-lg text-muted-foreground">
-            I want to help you realize your project vision. Let&apos;s discuss how to make it happen!
+            {t('subtitle')}
           </p>
         </div>
 
         <Card>
           <CardHeader>
-            <CardTitle>Send me a message</CardTitle>
+            <CardTitle>{t('cardTitle')}</CardTitle>
             <CardDescription>
-              Fill out the form below and I will get back to you as soon as possible.
+              {t('cardDesc')}
             </CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="space-y-2">
                 <label htmlFor="name" className="text-sm font-medium">
-                  Name
+                  {t('nameLabel')}
                 </label>
                 <input
                   type="text"
@@ -68,13 +71,13 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   className="w-full px-3 py-2 border rounded-md bg-background"
-                  placeholder="Your name"
+                  placeholder={t('namePlaceholder')}
                 />
               </div>
 
               <div className="space-y-2">
                 <label htmlFor="email" className="text-sm font-medium">
-                  Email
+                  {t('emailLabel')}
                 </label>
                 <input
                   type="email"
@@ -84,13 +87,13 @@ export default function ContactPage() {
                   onChange={handleChange}
                   required
                   className="w-full px-3 py-2 border rounded-md bg-background"
-                  placeholder="your.email@example.com"
+                  placeholder={t('emailPlaceholder')}
                 />
               </div>
 
               <div className="space-y-2">
                 <label htmlFor="message" className="text-sm font-medium">
-                  Message
+                  {t('messageLabel')}
                 </label>
                 <textarea
                   id="message"
@@ -100,17 +103,17 @@ export default function ContactPage() {
                   required
                   rows={6}
                   className="w-full px-3 py-2 border rounded-md bg-background resize-none"
-                  placeholder="Tell me about your project..."
+                  placeholder={t('messagePlaceholder')}
                 />
               </div>
 
               <Button type="submit" className="w-full">
-                {status === "success" ? "Message Sent! ✓" : "Send Message"}
+                {status === "success" ? t('successButton') : t('sendButton')}
               </Button>
 
               {status === "success" && (
                 <p className="text-sm text-green-600 dark:text-green-400 text-center">
-                  Thank you! Your message has been received.
+                  {t('successMessage')}
                 </p>
               )}
             </form>

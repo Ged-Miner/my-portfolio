@@ -1,0 +1,45 @@
+{
+  "Navigation": {
+    "projects": "Projects",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "Home": {
+    "title": "My Projects",
+    "subtitle": "A collection of my web development work"
+  },
+  "About": {
+    "title": "About Me",
+    "intro": "Hi! I'm Matthew, a web developer based in Japan, working for an international company. I specialize in building modern, responsive web applications using cutting-edge technologies.",
+    "passion": "My passion lies in creating seamless user experiences and writing clean, maintainable code. I enjoy working on projects that challenge me to learn new technologies and solve complex problems.",
+    "personal": "When I'm not coding, you can find me exploring Tokyo, learning more Japanese, or contributing to open-source projects.",
+    "frontend": "Frontend Development",
+    "frontendDesc": "Building interactive user interfaces",
+    "backend": "Backend Development",
+    "backendDesc": "Server-side architecture and databases",
+    "tools": "Tools & Workflow",
+    "toolsDesc": "Development environment and design",
+    "languages": "Languages",
+    "languagesDesc": "Communication and collaboration"
+  },
+  "Contact": {
+    "title": "Get In Touch",
+    "subtitle": "Have a project in mind or want to collaborate? I'd love to hear from you!",
+    "cardTitle": "Send me a message",
+    "cardDesc": "Fill out the form below and I'll get back to you as soon as possible.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "your.email@example.com",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell me about your project...",
+    "sendButton": "Send Message",
+    "successButton": "Message Sent! ✓",
+    "successMessage": "Thank you! Your message has been received."
+  },
+  "Project": {
+    "backButton": "Back to Projects",
+    "viewLive": "View Live Site",
+    "viewCode": "View Code"
+  }
+}
